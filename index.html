@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Trafalgar</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -13,29 +13,30 @@
     SITE HEADER
   ============= -->
 
-  <header class="site-header">
+  <header class="header-wrapper">
     <div class="container">
-      <a href="index.html">
-        <img class="site-logo" src="img/logo.svg" alt="Site logo" width="160" height="41">
-      </a>
-  
-      <ul class="site-header-list">
-        <li class="site-header-item">
-          <a href="#" class="site-header-link">Home</a>
-        </li>
-        <li class="site-header-item">
-          <a href="#" class="site-header-link">Find a doctor</a>
-        </li>
-        <li class="site-header-item">
-          <a href="#" class="site-header-link">Apps</a>
-        </li>
-        <li class="site-header-item">
-          <a href="#" class="site-header-link">Testimonials</a>
-        </li>
-        <li class="site-header-item">
-          <a href="#" class="site-header-link">About us</a>
-        </li>
-      </ul><!-- site-header-list <-->  
+      <div class="site-header">
+        <a href="index.html">
+          <img class="site-logo" src="img/logo.svg" alt="Site logo" width="160" height="41">
+        </a>
+        <ul class="site-header-list">
+          <li class="site-header-item">
+            <a href="#" class="site-header-link">Home</a>
+          </li>
+          <li class="site-header-item">
+            <a href="#" class="site-header-link">Find a doctor</a>
+          </li>
+          <li class="site-header-item">
+            <a href="#" class="site-header-link">Apps</a>
+          </li>
+          <li class="site-header-item">
+            <a href="#" class="site-header-link">Testimonials</a>
+          </li>
+          <li class="site-header-item">
+            <a href="#" class="site-header-link">About us</a>
+          </li>
+        </ul><!-- site-header-list <-->
+      </div>
     </div><!-- container -->
   </header><!-- site-header -->
 
@@ -49,14 +50,14 @@
         <div class="about-healthcare-info">
           <h2 class="about-healthcare-heading">Virtual healthcare for you</h2>
           <p class="about-healthcare-text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-          <a href="#">Consult today</a>
+          <div class="consult-div"><a class="consult-link" href="#">Consult today</a></div>
         </div><!-- about-healthcare-info -->
         <img class="healthcare-img" src="img/healthcare.png" alt="About healthcare image" width="693" height="598" srcset="img/healthcare.png 1x, img/healthcare@2x.png 2x">
       </section><!-- about-healthcare -->
 
       <section class="our-services">
         <h3 class="our-services-heading">Our services</h3>
-        <hr>
+        <hr class="class-hr">
         <p class="our-services-text">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
 
         <ul class="our-services-list">
@@ -110,28 +111,28 @@
           </li><!-- our-services-item -->
         </ul><!-- our-services-list <-->
 
-        <a href="#">Learn more</a>
+        <a class="learn-link" href="#">Learn more</a>
       </section><!-- our-services -->
 
       <section class="healthcare-providers">
         <img class="healthcare-providers-img" src="img/leading.png" alt="Healthcare providers" width="650" height="477" srcset="img/leading.png 1x, img/leading@2x.png 2x">
 
         <div class="healthcare-providers-info">
-          <h3>Leading healthcare providers</h3>
-          <hr>
-          <p >Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
-          <a class="healthcare-providers-link" href="#">Learn more</a>
+          <h3 class="healthcare-providers-heading">Leading healthcare providers</h3>
+          <hr class="class-hr class-hr-health">
+          <p class="healthcare-providers-text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+          <a class="healthcare-providers-link learn-link" href="#">Learn more</a>
         </div><!-- healthcare-providers-info -->
       </section><!-- healthcare-providers -->
 
       <section class="mobile-apps">
         <div class="mobile-apps-info">
           <h3 class="mobile-apps-heading">Download our mobile apps</h3>
-          <hr>
+          <hr class="class-hr class-hr-health">
           <p class="mobile-apps-text">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
-          <a class="mobile-apps-info" href="#"> 
+          <a class="mobile-apps-info-link" href="#"> 
             <span class="mobile-apps-info-text">Download</span>
-            <img src="img/arrow-down.png" alt="Bottom arrow" width="15" height="10" srcset="img/arrow-down.png 1x, img/arrow-down@2x.png 2x">
+            <img class="mobile-apps-info-img" src="img/arrow-down.png" alt="Bottom arrow" width="15" height="10" srcset="img/arrow-down.png 1x, img/arrow-down@2x.png 2x">
           </a>
         </div><!-- mobile-apps-info -->
 
@@ -141,6 +142,7 @@
       <section class="customers-saying">
         <div class="customers-saying-info">
           <h3 class="customers-saying-heading">What our customer are saying</h3>
+          <hr class="customers-hr">
           <div class="customers-saying-about">
             <img class="customers-saying-img" src="img/autor.jpg" alt="Customer img" width="141" height="141" srcset="img/autor.jpg 1x, img/autor@2x.jpg 2x">
             <div class="customers-saying-name-job">
@@ -153,14 +155,22 @@
 
         <div class="customers-saying-link-box">
           <img class="customers-arrow-left" src="img/arrow-left.png" alt="Arrow left" width="31" height="20" srcset="img/arrow-left.png 1x, img/arrow-left@2x.png 2x">
-          <img src="" alt="">
+
+          <span class="customers-arrow-point customers-arrow-point-active"></span>
+
+          <span class="customers-arrow-point"></span>
+
+          <span class="customers-arrow-point"></span>
+
+          <span class="customers-arrow-point"></span>
+
           <img class="customers-arrow-right" src="img/arrow-right.png" alt="Arrow right" width="31" height="20" srcset="img/arrow-right.png 1x, img/arrow-right@2x.png 2x">
         </div><!-- customers-saying-link-box -->
       </section><!-- customers-saying -->
 
       <article class="latest-article">
-        <h3 class="latest-article-heading">Check out our latest article</h3>
-        <hr>
+        <h3 class="latest-article-heading-big">Check out our latest article</h3>
+        <hr class="class-hr">
         <ul class="latest-article-list">
           <li class="latest-article-item">
             <img class="latest-article-img" src="img/detection.jpg" alt="Disease detection" width="350" height="240" srcset="img/detection.jpg 1x, img/detection@2x.jpg 2x">
@@ -193,7 +203,7 @@
           </li><!-- latest-article-item -->
         </ul><!-- Elatest-article-list <-->
 
-        <a class="latest-article-link" href="#">View all</a>
+        <a class="latest-article-link learn-link" href="#">View all</a>
       </article><!-- latest-article -->
     </div><!-- container -->
   </main><!-- site-main -->
@@ -202,69 +212,68 @@
     <!-- ============
     SITE FOOTER
   ============= -->
-  <footer class="site-footer">
+  <footer class="site-footer-wrapper">
     <div class="container">
-      <div class="footer-company-info">
-      <a href="index.html">
-        <img class="site-logo" src="img/white-logo.svg" alt="Site logo" width="160" height="41">
-      </a>
-      <p class="footer-company-info-text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-      <p class="footer-company-info-rights">©Trafalgar PTY LTD 2020. All rights reserved</p>
-    </div><!-- footer-company-info -->
-
-    <div class="footer-company">
-      <h5 class="footer-company-heading">Company</h5>
-      <ul class="footer-company-list">
-        <li class="footer-company-item">
-          <a href="#" class="footer-company-link">About</a>
-        </li>
-        <li class="footer-company-item">
-          <a href="#" class="footer-company-link">Testimonials</a>
-        </li>
-        <li class="footer-company-item">
-          <a href="#" class="footer-company-link">Find a doctor</a>
-        </li>
-        <li class="footer-company-item">
-          <a href="#" class="footer-company-link">Apps</a>
-        </li>
-      </ul><!-- footer-company-list <-->  
-    </div><!-- footer-company -->
-
-    <div class="footer-region">
-      <h5 class="footer-region-heading">Region</h5>
-      <ul class="footer-region-list">
-        <li class="footer-region-item">
-          <a href="#" class="footer-region-link">Indonesia</a>
-        </li>
-        <li class="footer-region-item">
-          <a href="#" class="footer-region-link">Singapore</a>
-        </li>
-        <li class="footer-region-item">
-          <a href="#" class="footer-region-link">Hongkong</a>
-        </li>
-        <li class="footer-region-item">
-          <a href="#" class="footer-region-link">Canada</a>
-        </li>
-      </ul><!-- footer-region-list <-->  
-    </div><!-- footer-region -->
-
-    <div class="footer-help">
-      <h5 class="footer-help-heading">Help</h5>
-      <ul class="footer-help-list">
-        <li class="footer-help-item">
-          <a href="#" class="footer-help-link">Help center</a>
-        </li>
-        <li class="footer-help-item">
-          <a href="#" class="footer-help-link">Contact support</a>
-        </li>
-        <li class="footerhelpn-item">
-          <a href="#" class="footer-help-link">Instructions</a>
-        </li>
-        <li class="footer-help-item">
-          <a href="#" class="footer-help-link"> How it works</a>
-        </li>
-      </ul><!-- footer-help-list <-->  
-    </div><!-- footer-help -->
+      <div class="site-footer">
+        <div class="footer-company-info">
+          <a href="index.html">
+            <img class="site-logo" src="img/white-logo.svg" alt="Site logo" width="160" height="41">
+          </a>
+          <p class="footer-company-info-text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+          <p class="footer-company-info-rights">©Trafalgar PTY LTD 2020. All rights reserved</p>
+        </div><!-- footer-company-info -->
+        <div class="footer-box">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">About</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Testimonials</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Find a doctor</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Apps</a>
+            </li>
+          </ul><!-- footer-list <-->
+        </div><!-- footer-box -->
+        <div class="footer-box">
+          <h5 class="footer-heading">Region</h5>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">Indonesia</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Singapore</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Hongkong</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Canada</a>
+            </li>
+          </ul><!-- footer-list <-->
+        </div><!-- footer-box -->
+        <div class="footer-box">
+          <h5 class="footer-heading">Help</h5>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">Help center</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Contact support</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Instructions</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link"> How it works</a>
+            </li>
+          </ul><!-- footer-list <-->
+        </div><!-- footer-box -->
+      </div>
     </div><!-- container -->
   </footer><!-- site-footer -->
 </body>
